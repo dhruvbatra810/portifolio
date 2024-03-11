@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <meta content="description" name="description" />
+    <meta name="google" content="notranslate" />
+    <meta
+      content="Mashup templates have been developped by Orson.io team"
+      name="author"
+    />
+
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/apple-icon-180x180.png"
+    />
+    <link href="./assets/favicon.ico" rel="icon" />
+
+    <title>Title page</title>
+
+    <link href="./main.3f6952e4.css" rel="stylesheet" />
+    <style>
+      .outer-container {
+        scroll-snap-type: y mandatory;
+        overflow-y: scroll;
+        height: 100vh;
+      }
+      .slides {
+        position: relative;
+        display: flex;
+        height: 100vh;
+        scroll-snap-align: start;
+        opacity: 1;
+        transition: opacity 0.5s ease; /* Add transition for opacity */
+      }
+      .hidden {
+        opacity: 0; /* Hidden slides will have zero opacity */
+      }
+      .contact-section {
+        display: flex;
+        align-items: center;
+        padding-top: 150px;
+      }
+      p{
+        font-size: 13px;
+      }
+      .img1{
+        top: 0px;
+        left: 50%;
+          position: absolute;
+         height: 100vh;
+         width: 100vh;
+         opacity: 0.1;
+         filter: grayscale(100%);
+      }
+      .img2{
+        top: 0px;
+        left: 50%;
+          position: absolute;
+         height: 150vh;
+         width: 100vh;
+         opacity: 0.1;
+         filter: grayscale(100%);
+      }
+      .home-img{
+          position: absolute;
+         height: 100vh;
+         opacity: 0.8;
+      }
+      .work-skills{
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+      }
+      .work-skills .work{
+        width: 70%;
+
+      }
+    </style>
+  </head>
+
+  <body class="minimal">
+    <div id="site-border-left"></div>
+    <div id="site-border-right"></div>
+    <div id="site-border-top"></div>
+    <div id="site-border-bottom"></div>
+    <!-- Add your content of header -->
+    <header>
+      <nav class="navbar navbar-fixed-top navbar-inverse">
+        <div class="container">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#navbar-collapse"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="#section1" title="">01 : Home</a></li>
+              <li><a href="#section2" title="">02 : About me</a></li>
+              <li><a href="#section3" title="">03 : Projects</a></li>
+              <li><a href="#section4" title="">04 : Contact</a></li>
+              <li ><a  style="color:blanchedalmond;font-size:large;font-weight: bold;" href="https://drive.google.com/file/d/1d_RaD9HHbrsX6NWQu4xEHMSFS5QsyLvW/view?usp=sharing" target="_blank" download>Download RESUME</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="outer-container">
+      <!-- Home page Section -->
+      <div
+        class="hero-full-container background-image-container white-text-container slides"
+        id="section1"
+      >
+      <img src="./assets/images/space.jpg" class ="home-img" />
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="hero-full-wrapper">
+                <div class="text-content">
+                  <h1>
+                    Hello,I'm <br />
+                    <span id="typed-strings">
+                      <span>Dhruv Batra .</span>
+                      <span>Full-Stack Developer!!</span>
+                      <span>Boring Person!!</span>
+                      <span>Gamer!!</span>
+                    </span>
+                    <span id="typed"></span>
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- About me Section  -->
+      <div class="section-container slides" id="section2">
+        <div class="container">
+          <div class="row">
+            <img src="./assets/images/Burning Bright by sublimenation.jpeg" class=" img1"/>
+  
+            <div class="col-xs-12">
+              <div class="section-container-spacer text-center">
+                <h1 class="h2">02 : About me</h1>
+              </div>
+
+              <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                  <div class="row">
+                    <div class="col-xs-12 col-md-12">
+                      <h3>🚀 Aspiring Software Developer 🚀</h3>
+                      <p>
+                        Bringing foundational knowledge in <b>VANILLA JS, REACT,
+                        and NODE.JS and Strong problem solving skills</b> to the
+                        table.
+                      </p>
+                      <h3>Motivation:</h3>
+                      <p>
+                        Eager to embark on a journey where academic prowess
+                        meets practical expertise. Passionate about leveraging
+                        skills to drive innovation and tackle real-world
+                        challenges in web development projects.
+                      </p>
+                      <h3>Skills:</h3>
+                      <p>
+                        <ul>
+                          <li>
+                            🔍 <b>Strong Problem-solving:</b> Thrives in dissecting complex problems and finding elegant solutions.
+                          </li>
+                          <li>
+                            📚 <b>Continuous Learning:</b> Committed to staying updated with the latest technologies and trends.
+                          </li>
+                          <li>
+                            🌱 <b>Growth Mindset:</b> Embraces challenges as opportunities for personal and professional growth.
+                          </li>
+                        </ul>
+                      </p>
+                      <h3>Closing:</h3>
+                      <p>
+                        Excited to dive into new opportunities, contribute meaningfully, and make a positive impact in the world of software development.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- project  Section  -->
+      <div class="section-container slides contact-section" id="section3">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-sm-offset-2 section-container-spacer">
+              <div class="text-center">
+                <h1 class="h2">03 : Works</h1>
+                <p>
+                  Projects below harness the power of Cookies, React, MongoDB, SendGrid, Graph.js, Socket.io, and Node.js
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-12" >
+              <div id="myCarousel" class="carousel slide projects-carousel">
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <a
+                          href="./work.html"
+                          title=""
+                          class="black-image-project-hover"
+                        >
+                          <img
+                            src="./assets/images/work01-hover.jpg"
+                            alt=""
+                            class="img-responsive"
+                          />
+                        </a>
+                        <div class="card-container card-container-lg">
+                          <h4>01/2022</h4>
+                          <h3>Chat App</h3>
+                          <p>
+                            Crafting a full-stack application, the frontend built on React.js with Chakra UI seamlessly blends with a Node.js backend, leveraging Socket.io and MongoDB for dynamic functionality.
+                          </p>
+                          <a href="https://github.com/dhruvbatra810/learn-react-chatapp/tree/master" title="" target="_blank" class="btn btn-default"
+                            >Discover</a
+                          >
+                        </div>
+                      </div>
+                      <div class="col-sm-4">
+                        <a
+                          href="./work.html"
+                          title=""
+                          class="black-image-project-hover"
+                        >
+                          <img
+                            src="./assets/images/work02-hover.jpg"
+                            alt=""
+                            class="img-responsive"
+                          />
+                        </a>
+                        <div class="card-container card-container-lg">
+                          <h4>12/2021</h4>
+                          <h3>Get News</h3>
+                          <p>
+                            Introducing the News App: your sleek, secure gateway to real-time headlines. We leverage the Bing News API for updates, ensure data integrity with MongoDB, and offer seamless access through React-powered user interfaces.
+                          </p>
+                          <a href="https://github.com/dhruvbatra810/news-app" title="" target="_blank" class="btn btn-default"
+                            >Discover</a
+                          >
+                        </div>
+                      </div>
+                      <div class="col-sm-4">
+                        <a
+                          href="./work.html"
+                          title=""
+                          class="black-image-project-hover"
+                        >
+                          <img
+                            src="./assets/images/work03-hover.jpg"
+                            alt=""
+                            class="img-responsive"
+                          />
+                        </a>
+                        <div class="card-container card-container-lg">
+                          <h4>01/2022</h4>
+                          <h3>CF Stalker </h3>
+                          <p>
+                            Explore Codeforces users' problem-solving patterns with our Chrome extension, revealing problem tags, solving frequency, and difficulty levels for enhanced community engagement and knowledge sharing.
+                          </p>
+                          <a href="https://github.com/dhruvbatra810/CF_Stalker" title="" target="_blank" class="btn btn-default"
+                            >Discover</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <!--/row-->
+                  </div>
+                  <!--/item-->
+                  <!--/item-->
+                </div>
+                <!--/carousel-inner-->
+                <a
+                  class="left carousel-control"
+                  href="#myCarousel"
+                  data-slide="prev"
+                  >‹</a
+                >
+
+                <a
+                  class="right carousel-control"
+                  href="#myCarousel"
+                  data-slide="next"
+                  >›</a
+                >
+              </div>
+
+              <!--/myCarousel-->
+            </div>
+          </div>
+        </div>
+      </div>
+       <!-- Work and skills  Section  -->
+      <!-- <div class="section-container slides " id="section5">
+        <div class="section-container-spacer text-center ">
+          <h1 class="h2">02 : Work and skills</h1>
+        <br/>
+        <div class="work-skills"> -->
+         <!-- Work  -->
+        <!-- <div class="work">
+          <h2>Zopsmart Pvt Ltd</h2>
+          <h3>Software Engineer</h3>
+          <ul >
+            <li>
+              Led the development of the Zode framework, streamlining RESTful APIs and enhancing request handling efficiency. Leveraged this stack to architect Microservices, ensuring Scalability and Reliability, while designing functional, orchestration, and data layers with Postgres and Knex.
+              <br/>
+              Elevated frontend experiences through React and Sass mastery, driving user engagement. Pioneered bespoke component libraries for consistency and innovation, enhancing scalability and maintainability.</li>
+          </ul>
+          <h2>Zopsmart Pvt Ltd</h2>
+          <h3>Software Engineer Intern</h3>
+          <ul>
+            <li>During my internships at EazyUpdates and TestPaper, I honed my skills in React, Material-UI (MUI), Sass, and React-Query, specializing in Frontend development.</li>
+          </ul>
+        </div> -->
+         <!-- Skills  -->
+        <!-- <div>
+          <img width="48" height="32" src="https://img.icons8.com/office/16/react.png" alt="react"/>
+          <img width="32" height="32" src="https://img.icons8.com/fluency/48/node-js.png" alt="node-js"/>
+          <img width="32" height="32" src="https://img.icons8.com/matisse/100/sql.png" alt="sql"/>
+          <img width="32" height="32" src="https://img.icons8.com/color/48/javascript--v2.png" alt="javascript--v2"/>
+          <img width="32" height="32" src="https://img.icons8.com/color/48/postgreesql.png" alt="postgreesql"/>
+          <img width="32" height="32" src="https://img.icons8.com/papercut/60/html.png" alt="html"/>
+          <img width="32" height="32" src="https://img.icons8.com/stickers/100/css3.png" alt="css3"/>
+          <img width="32" height="32" src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/24/external-typescript-an-open-source-programming-language-developed-and-maintained-by-microsoft-logo-shadow-tal-revivo.png" alt="external-typescript-an-open-source-programming-language-developed-and-maintained-by-microsoft-logo-shadow-tal-revivo"/>
+          <img width="32" height="32" src="https://img.icons8.com/color/48/git.png" alt="git"/>
+        </div>
+      </div>
+        </div>
+      </div> -->
+      <!-- ContactMe  Section  -->
+      <div class="section-container slides contact-section" id="section4">
+        <div class="container">
+          <div class="row">
+            <img src="./assets/images/•Wallpaper•.jpeg" class=" img2"/>
+            <div class="col-xs-12">
+              <div class="section-container-spacer text-center">
+                <h1 class="h2">04 : Contact me</h1>
+              </div>
+
+              <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                  <form action="" class="reveal-content">
+                    <div class="row">
+                      <div class="col-md-5 address-container">
+                        <ul class="list-unstyled">
+                          <li>
+                            <span class="fa-icon">
+                              <i class="fa fa-phone" aria-hidden="true"></i>
+                            </span>
+                            +91 7814690448
+                          </li>
+                          <li>
+                            <span class="fa-icon">
+                              <i class="fa fa-at" aria-hidden="true"></i>
+                            </span>
+                            dhruv16032001@gmail.com
+                          </li>
+                        </ul>
+
+                            <a
+                            href="https://github.com/dhruvbatra810"
+                            title=""
+                            class="fa-icon"
+                          >
+                            <i class="fa fa-github"></i>
+                          </a>
+                        
+                        <a
+                          href="https://www.linkedin.com/in/dhruv-batra-49050b1a4/"
+                          title=""
+                          class="fa-icon"
+                        >
+                          <i class="fa fa-linkedin"></i>
+                        </a>
+                        <a class="btn btn-default" style="color:blanchedalmond;font-size:large;font-weight: bold;" href="https://drive.google.com/file/d/1d_RaD9HHbrsX6NWQu4xEHMSFS5QsyLvW/view?usp=sharing" target="_blank" download>Download RESUME</a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function (event) {
+        type();
+        movingBackgroundImage();
+      });
+    </script>
+
+    <script type="text/javascript" src="./main.70a66962.js"></script>
+  </body>
+</html>
