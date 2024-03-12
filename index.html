@@ -25,6 +25,10 @@
 
     <link href="./main.3f6952e4.css" rel="stylesheet" />
     <style>
+      .con {
+        display: flex;
+        justify-content: center;
+      }
       .outer-container {
         scroll-snap-type: y mandatory;
         overflow-y: scroll;
@@ -33,7 +37,7 @@
       .slides {
         position: relative;
         display: flex;
-        height: 100vh;
+         height: 100vh;
         scroll-snap-align: start;
         opacity: 1;
         transition: opacity 0.5s ease; /* Add transition for opacity */
@@ -50,16 +54,15 @@
         font-size: 13px;
       }
       .img1{
-        top: 0px;
-        left: 54%;
           position: absolute;
+          width: 100%;
          height: 100vh;
          opacity: 0.1;
          filter: grayscale(100%);
       }
       .img2{
         top: 0px;
-        left: 42%;
+        right: 0;
           position: absolute;
          height: 150vh;
          width:100vh;
@@ -85,20 +88,52 @@
         background-color: rgba(0, 0, 0, 0.1);
         width:100%;
       }
-      a:hover{
-        color:black
+      @media screen and (max-width:1000px) {
+        .img2{
+        top: 0px;
+        right: 0;
+          position: absolute;
+         height: 100vh;
+         width: 80vh;
+         opacity: 0.1;
+         filter: grayscale(100%);
+      }
+      }
+      @media screen and (max-width:800px){
+        .outer-container {
+          scroll-snap-type: unset; /* Reset scroll-snap-type to its default */
+           overflow-y: auto; /* Reset overflow-y to its default */
+           height: unset;
+        }
+  
+      .slides {
+         scroll-snap-align: unset; /* Reset scroll-snap-align to its default */
+         height: unset;
+       }
+       .img2{
+        top: 0px;
+        right: 0;
+          position: absolute;
+         height: 70vh;
+         width:100%;
+         opacity: 0.1;
+         filter: grayscale(100%);
+      }
+      .contact-section {
+        padding-top: unset;
+      }
       }
     </style>
   </head>
 
-  <body class="minimal">
+  <div class="minimal">
     <div id="site-border-left"></div>
     <div id="site-border-right"></div>
     <div id="site-border-top"></div>
     <div id="site-border-bottom"></div>
     <!-- Add your content of header -->
     <header>
-      <nav class="navbar navbar-fixed-top navbar-inverse navbar">
+      <nav class="navbar navbar-fixed-top navbar-inverse">
         <div class="container">
           <button
             type="button"
@@ -154,10 +189,11 @@
         </div>
       </div>
       <!-- About me Section  -->
+      <div class="slides con"> <img src="./assets/images/Burning Bright by sublimenation.jpeg" class=" img1"/>
       <div class="section-container slides" id="section2">
         <div class="container">
           <div class="row">
-            <img src="./assets/images/Burning Bright by sublimenation.jpeg" class=" img1"/>
+            
   
             <div class="col-xs-12">
               <div class="section-container-spacer text-center">
@@ -206,6 +242,7 @@
             </div>
           </div>
         </div>
+      </div>
       </div>
       <!-- project  Section  -->
       <div class="section-container slides contact-section" id="section3">
@@ -360,10 +397,11 @@
         </div>
       </div> -->
       <!-- ContactMe  Section  -->
-      <div class="section-container slides contact-section" id="section4">
+      <div class="slides con"><img src="./assets/images/•Wallpaper•.jpeg" class=" img2"/>
+      <div class="section-container  contact-section" id="section4">
         <div class="container">
           <div class="row">
-            <img src="./assets/images/•Wallpaper•.jpeg" class=" img2"/>
+            
             <div class="col-xs-12">
               <div class="section-container-spacer text-center">
                 <h1 class="h2">04 : Contact me</h1>
@@ -415,6 +453,7 @@
         </div>
       </div>
     </div>
+  </div>
     <script>
       document.addEventListener("DOMContentLoaded", function (event) {
         type();
