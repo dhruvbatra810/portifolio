@@ -29,10 +29,29 @@
         display: flex;
         justify-content: center;
       }
+      .updown-animation { 
+        animation-name : infiniteupdown;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease;
+        transition: all .3s;
+      }
+      @keyframes infiniteupdown {
+        0%{
+          transform: translateY(0px);
+        }
+        50%{
+          transform: translateY(-40px);
+        }
+        100%{
+          transform: translateY(0px);
+        }
+      }
       .outer-container {
         scroll-snap-type: y mandatory;
         overflow-y: scroll;
         height: 100vh;
+        overflow-x: hidden;
       }
       .slides {
         position: relative;
@@ -54,13 +73,12 @@
         font-size: 13px;
       }
       .img{
-        border-radius: 50%;
+        position: absolute;;
+        right:-10%;
+        top: -25rem;
         width:30rem;
-        height:30rem;
-        filter: grayscale(100%);
-        outline: solid white 5px ;
-        box-shadow: 0px 0px 50px  white;
-        opacity: 0.9;
+        filter: grayscale(90%);
+        opacity: 0.7;
       }
       .home{
         display: flex;
@@ -159,6 +177,7 @@
           scroll-snap-type: unset; /* Reset scroll-snap-type to its default */
            overflow-y: hidden; /* Reset overflow-y to its default */
            height: unset;
+           overflow-x: hidden;
         }
   
       .slides {
@@ -246,7 +265,7 @@
               </div>
             </div>
             <div class="col-xs-3">
-              <img class="img" src="./assets/images/me.jpeg">
+              <div class="animate__animated animate__zoomIn img updown-animation"><img src="./assets/images/header-img.84bf93eb20488a753440bf83d27db7bb.svg" alt="Header Img"></div>
             </div>
           </div>
         </div>
